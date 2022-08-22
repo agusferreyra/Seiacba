@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #fcedf7;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 25px 0 25px;
+}
+
+/*inicio estilos barra de menu*/
+.cajaMenu {
+    width: 600px;
+    background-color: #fbe2f4;
+    margin: 35px;
+    border-radius: 2px;
+}
+
+.menu {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    padding: 13px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.menu li a {
+    color: #E18D92;
+    text-decoration: none;
+
+}
+
+.menuItem.active a {
+    color: #E18D92;
+    font-weight: bolder;
+    font-weight: 800;
+}
+
+.menuItem a:hover {
+    color: #E18D92;
+    font-weight: bolder;
+    font-weight: 800;
+}
+
+/*fin estilos barra de menu*/
+/*inicio estilo texto ayuda*/
+.textoAyuda {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    padding: 10px;
+}
+
+/*fin estilo texto ayuda*/
+/*inicio estilo titulos*/
+.tituloPrincipal {
+    font-family: 'Square Peg', cursive;
+    font-size: xxx-large;
+    color: #E18D92;
+    text-align: center;
+    padding: 20px;
+}
+
+.tituloSecundario {
+    font-family: 'Square Peg', cursive;
+    color: #E18D92;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tituloCategorias {
+    font-family: 'Square Peg', cursive;
+    color: #E18D92;
+    font-size: xx-large;
+    text-align: center;
+}
+
+/*fin estilos titulos*/
+/*inicio estilo caja categoria*/
+.cajaCategoria {
+    width: 200px;
+    height: 200px;
+    background-color: #fbe2f4;
+    margin: 20px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.gridCategorias {
+    grid-area: categorias;
+}
+
+.categorias {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #3F403B;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.categorias.active {
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+.categorias a {
+    color: #3F403B;
+    text-decoration: none;
+}
+
+.categorias a:hover {
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+/*fin estilo caja categoria*/
+/*inicio estilo footer*/
+footer {
+    display: flex;
+    background-color: #fcedf7;
+    margin-top: 40px;
+    grid-area: footer;
+}
+
+.footer p {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+
+}
+
+.footer h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    padding: 10px
+}
+
+.footer h4 a {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+
+/*fin estilo footer*/
+/*inicio estilo textos*/
+.texto {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+    padding: 15px;
+}
+
+.textoComoComprar {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.textoMetodos {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textoPuntosEntrega {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.linksContacto {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.linksContacto li a {
+    color: #3F403B;
+}
+
+.productos p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #3F403B;
+}
+
+/*fin estilo textos*/
+/*inicio estilo contenido nosotras*/
+.contenidoNosotras {
+    display: flex;
+    justify-content: center;
+}
+
+.cajaNosotras {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cajaNosotras img {
+    margin: 10px;
+}
+
+/*fin estilo contenido nosotras*/
+/*inicio estilo nuestros productos en inicio*/
+.cajaProductos {
+    background-color: #fbe2f4;
+    width: 250px;
+    height: 330px;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.listaCajaProductos {
+    display: flex;
+    justify-content: space-between ;
+}
+
+.listaCajaProductos li {
+    display: inline-block;
+}
+
+/*fin estilo nuestros productos en inicio*/
+@media screen {
+    
+}
+/*inicio estilo contenido contacto*/
+.contenidoContacto {
+    display: flex;
+    justify-content: center;
+}
+
+.cajaContacto {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*fin estilo contenido contacto*/
+/*inicio estilo catalogo*/
+
+.cajaProducto {
+    background-color: #fbe2f4;
+    width: 250px;
+    margin: 20px 0px 0px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cajaProducto p {
+    padding: 5px;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+/*fin estilo catalogo*/
+/*inicio estilo contenido como comprar*/
+.contenidoComprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cajaComoComprar {
+    width: 700px;
+    margin: 30px;
+    padding: 10px;
+    text-align: start;
+}
+
+.cajaMetodos {
+    width: 700px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cajaMetodo {
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+}
+
+.cajaPuntosEntrega {
+    width: 700px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*fin estilo contenido como comprar*/
+/*inicio grids*/
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: repeat(120px 1fr 1fr 50px);
+    grid-template-areas:
+        "header header"
+        "categorias productos"
+        "..... productos"
+        "footer footer"
+    ;
+}
