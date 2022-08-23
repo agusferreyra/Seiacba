@@ -258,9 +258,6 @@ footer {
 }
 
 /*fin estilo nuestros productos en inicio*/
-@media screen {
-    
-}
 /*inicio estilo contenido contacto*/
 .contenidoContacto {
     display: flex;
@@ -343,4 +340,22 @@ footer {
         "..... productos"
         "footer footer"
     ;
+}
+.contenedorInicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+"header"
+"novedades"
+"nuestrosProductos"
+"footer"
+    ;
+}
+.novedades{
+    grid-area: novedades;
+}
+.nuestrosProductos{
+    grid-area: nuestrosProductos;
 }
