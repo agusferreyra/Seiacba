@@ -5,11 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
+.carrusel{
     display: flex;
+width: 90%;
+margin-inline: 5%;
+margin-top: 5%;
+margin-bottom: 3%;
+}
+
+.imgCarrusel{
+    border-radius: 15px;
+}
+header {
     background-color: #fcedf7;
-    justify-content: space-between;
     grid-area: header;
 }
 
@@ -20,10 +28,8 @@ header {
 
 /*inicio estilos barra de menu*/
 .cajaMenu {
-    width: 600px;
     background-color: #fbe2f4;
-    margin: 35px;
-    border-radius: 2px;
+
 }
 
 .menu {
@@ -46,7 +52,7 @@ header {
 
 }
 
-.menuItem.active a {
+.active a {
     color: #E18D92;
     font-weight: bolder;
     font-weight: 800;
@@ -74,14 +80,16 @@ header {
     color: #E18D92;
     text-align: center;
     padding: 20px;
+    font-weight: bold;
 }
 
 .tituloSecundario {
     font-family: 'Square Peg', cursive;
     color: #E18D92;
-    font-size: xx-large;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .tituloCategorias {
@@ -89,13 +97,14 @@ header {
     color: #E18D92;
     font-size: xx-large;
     text-align: center;
+    font-weight: bold;
 }
 
 /*fin estilos titulos*/
 /*inicio estilo caja categoria*/
 .cajaCategoria {
     width: 200px;
-    height: 200px;
+    height: 210px;
     background-color: #fbe2f4;
     margin: 20px;
     padding: 10px 20px 20px 20px;
@@ -104,6 +113,10 @@ header {
 
 .gridCategorias {
     grid-area: categorias;
+}
+
+.filtroCategorias{
+    padding: 0%;
 }
 
 .categorias {
@@ -132,31 +145,21 @@ header {
 
 /*fin estilo caja categoria*/
 /*inicio estilo footer*/
-footer {
+.footer {
     display: flex;
     background-color: #fcedf7;
     margin-top: 40px;
+    justify-content: space-around;
     grid-area: footer;
 }
 
 .footer p {
     font-family: 'Quicksand', sans-serif;
     color: #3F403B;
+    margin-top: 11px;
 
 }
 
-.footer h4 {
-    font-family: 'Quicksand', sans-serif;
-    color: #3F403B;
-    padding: 10px
-}
-
-.footer h4 a {
-    font-family: 'Quicksand', sans-serif;
-    color: #3F403B;
-    font-weight: 600;
-    text-decoration-line: none;
-}
 
 /*fin estilo footer*/
 /*inicio estilo textos*/
@@ -250,7 +253,7 @@ footer {
 
 .listaCajaProductos {
     display: flex;
-    justify-content: space-between ;
+    justify-content: center ;
 }
 
 .listaCajaProductos li {
