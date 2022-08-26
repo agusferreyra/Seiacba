@@ -5,17 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-.carrusel{
+
+.carrusel {
     display: flex;
-width: 90%;
-margin-inline: 5%;
-margin-top: 5%;
-margin-bottom: 3%;
+    width: 90%;
+    margin-inline: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
-.imgCarrusel{
+.imgCarrusel {
     border-radius: 15px;
 }
+
 header {
     background-color: #fcedf7;
     grid-area: header;
@@ -115,7 +117,7 @@ header {
     grid-area: categorias;
 }
 
-.filtroCategorias{
+.filtroCategorias {
     padding: 0%;
 }
 
@@ -181,6 +183,7 @@ header {
     font-size: large;
     margin-bottom: 5px;
 }
+
 .textoMetodos {
     font-family: 'Quicksand', sans-serif;
     color: #3F403B;
@@ -252,7 +255,7 @@ header {
 
 .listaCajaProductos {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .listaCajaProductos li {
@@ -303,7 +306,7 @@ header {
 }
 
 .cajaComoComprar {
-    width: 700px;
+
     margin: 30px;
     padding: 10px;
     text-align: start;
@@ -321,6 +324,14 @@ header {
     display: inline-block;
     text-align: center;
     margin-inline: 20px;
+}
+
+.textoComoComprar {
+    padding: 0%;
+}
+
+.textoMetodos {
+    padding: 0%;
 }
 
 .cajaPuntosEntrega {
@@ -343,21 +354,58 @@ header {
         "footer footer"
     ;
 }
+
 .contenedorInicio {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 1fr 1fr 1fr 1fr;
     grid-template-areas:
-"header"
-"novedades"
-"nuestrosProductos"
-"footer"
+        "header"
+        "novedades"
+        "nuestrosProductos"
+        "footer"
     ;
 }
-.novedades{
+
+.novedades {
     grid-area: novedades;
 }
-.nuestrosProductos{
+
+.nuestrosProductos {
     grid-area: nuestrosProductos;
+}
+
+@media screen and (max-width: 480px) {
+    .cajaComoComprar {
+        width: 100vp;
+    }
+
+    .textoMetodos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .textoComoComprar {
+        padding: 0%;
+    }
+
+    .listaCajaProductos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+        grid-template-areas:
+            "header"
+            "categorias"
+            "productos"
+            "footer"
+        ;
+    }
 }
