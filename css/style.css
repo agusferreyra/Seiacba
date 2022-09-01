@@ -153,6 +153,8 @@ header {
     margin-top: 40px;
     justify-content: space-around;
     grid-area: footer;
+    bottom: 0%;
+    position: relative;
 }
 
 .footer p {
@@ -204,6 +206,7 @@ header {
     font-size: large;
     list-style-type: none;
     margin-bottom: 5px;
+    padding: 0%;
 }
 
 .linksContacto {
@@ -313,7 +316,6 @@ header {
 }
 
 .cajaMetodos {
-    width: 700px;
     margin: 30px;
     padding: 10px;
     text-align: center;
@@ -335,7 +337,6 @@ header {
 }
 
 .cajaPuntosEntrega {
-    width: 700px;
     margin: 30px;
     padding: 10px;
     text-align: center;
