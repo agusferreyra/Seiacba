@@ -153,15 +153,12 @@ header {
     margin-top: 40px;
     justify-content: space-around;
     grid-area: footer;
-    bottom: 0%;
-    position: relative;
 }
 
 .footer p {
     font-family: 'Quicksand', sans-serif;
     color: #3F403B;
     margin-top: 11px;
-
 }
 
 
@@ -376,6 +373,7 @@ header {
 .nuestrosProductos {
     grid-area: nuestrosProductos;
 }
+
 /*inicio media queries*/
 @media screen and (max-width: 810px) {
     .cajaComoComprar {
@@ -395,36 +393,41 @@ header {
 
     .listaCajaProductos {
         display: grid;
-        grid-template-columns:(1fr 1fr);
+        grid-template-columns: (1fr 1fr);
         grid-template-rows: (1fr 1fr);
-        grid-template-areas: 
-        "ruanas gorros"
-        "pañuelos accesorios"
+        grid-template-areas:
+            "ruanas gorros"
+            "pañuelos accesorios"
         ;
         padding: 0;
     }
-.ruanasInicio{
-    grid-area: ruanas;
-}
-.gorrosInicio{
-    grid-area: gorros;
-}
-.pañuelosInicio{
-    grid-area: pañuelos;
-}
-.accesoriosInicio{
-    grid-area: accesorios;
-}
+
+    .ruanasInicio {
+        grid-area: ruanas;
+    }
+
+    .gorrosInicio {
+        grid-area: gorros;
+    }
+
+    .pañuelosInicio {
+        grid-area: pañuelos;
+    }
+
+    .accesoriosInicio {
+        grid-area: accesorios;
+    }
+
     .contenedorProductos {
         display: grid;
         grid-template-columns: (1fr 1fr);
-    grid-template-rows: (120px 1fr 1fr 50px);
-    grid-template-areas:
-        "header header"
-        "categorias productos"
-        "..... productos"
-        "footer footer"
-    ;
+        grid-template-rows: (120px 1fr 1fr 50px);
+        grid-template-areas:
+            "header header"
+            "categorias productos"
+            "..... productos"
+            "footer footer"
+        ;
     }
 }
 
@@ -446,13 +449,13 @@ header {
 
     .listaCajaProductos {
         display: grid;
-        grid-template-columns:(1fr);
+        grid-template-columns: (1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "ruanas" 
-        "gorros"
-        "pañuelos" 
-        "accesorios"
+        grid-template-areas:
+            "ruanas"
+            "gorros"
+            "pañuelos"
+            "accesorios"
         ;
         padding: 0;
     }
@@ -468,14 +471,17 @@ header {
             "footer"
         ;
     }
-    .productos{
+
+    .productos {
         display: grid;
         justify-content: center;
     }
-    .cajaProducto{
+
+    .cajaProducto {
         margin: 20px 0 0 0;
     }
-    .elegirCategoria{
+
+    .elegirCategoria {
         display: grid;
         justify-content: center;
     }
