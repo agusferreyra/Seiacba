@@ -161,6 +161,16 @@ header {
     margin-top: 11px;
 }
 
+.footerContacto {
+    display: flex;
+    background-color: #fcedf7;
+    margin-top: 40px;
+    justify-content: space-around;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
 
 /*fin estilo footer*/
 /*inicio estilo textos*/
