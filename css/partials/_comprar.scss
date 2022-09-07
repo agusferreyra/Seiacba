@@ -1,0 +1,31 @@
+.contenidoComprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cajaComoComprar {
+
+        margin: 30px;
+        padding: 10px;
+        text-align: start;
+    }
+
+    .cajaMetodos {
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+
+        .cajaMetodo {
+            width: 140px;
+            display: inline-block;
+            text-align: center;
+            margin-inline: 20px;
+        }
+    }
+
+    .cajaPuntosEntrega {
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+}

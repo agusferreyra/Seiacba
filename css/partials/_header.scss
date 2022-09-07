@@ -1,0 +1,48 @@
+header {
+    background-color: #fcedf7;
+    grid-area: header;
+
+
+    .cajaMenu {
+        background-color: #fbe2f4;
+
+        .logo {
+            width: 120px;
+            margin: 0 25px 0 25px;
+        }
+
+        .menu {
+            list-style-type: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            font-size: large;
+            text-align: justify;
+            padding: 13px;
+
+            .menuItem {
+                display: inline-block;
+                margin-inline: 10px;
+
+                a {
+                    color: #E18D92;
+                    text-decoration: none;
+
+                }
+
+                a:hover {
+                    color: #E18D92;
+                    font-weight: bolder;
+                    font-weight: 800;
+                }
+            }
+
+            .active {
+                a {
+                    color: #E18D92;
+                    font-weight: bolder;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.textoAyuda {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    padding: 10px;
+}
+
+.tituloPrincipal {
+    font-family: $fontPrincipal;
+    font-size: xxx-large;
+    color: $colorSecundario;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.tituloSecundario {
+    font-family: $fontPrincipal;
+    color: $colorSecundario;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tituloCategorias {
+    font-family: $fontPrincipal;
+    color: $colorSecundario;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    font-weight: 500;
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+    padding: 15px;
+}
+
+.textoComoComprar {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    margin-bottom: 5px;
+    padding: 0%;
+}
+
+.textoMetodos {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+.textoPuntosEntrega {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding: 0%;
+}
+
+.linksContacto {
+    font-family: $fontSecundaria;
+    color: $colorTerciario;
+    font-weight: 500;
+    text-align: justify;
+    list-style-position: inside;
+
+    li>a {
+        color: $colorTerciario;
+    }
+}
+
+.productos {
+    p {
+        font-family: $fontSecundaria;
+        font-weight: 600;
+        color: $colorTerciario;
+    }
+}

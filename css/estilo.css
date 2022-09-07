@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+background-color:#E18D92;
+color:#fbe2f4;
+}
+header {
+    background-color: #fcedf7;
+    grid-area: header;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 25px 0 25px;
+}
+
+/*inicio estilos barra de menu*/
+.cajaMenu {
+    background-color: #fbe2f4;
+
+}
+
+.menu {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    padding: 13px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.menu li a {
+    color: #E18D92;
+    text-decoration: none;
+
+}
+
+.active a {
+    color: #E18D92;
+    font-weight: bolder;
+    font-weight: 800;
+}
+
+.menuItem a:hover {
+    color: #E18D92;
+    font-weight: bolder;
+    font-weight: 800;
+}
+
+/*fin estilos barra de menu*/
+/*inicio estilo texto ayuda*/
+.textoAyuda {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    padding: 10px;
+}
+
+/*fin estilo texto ayuda*/
+/*inicio estilo titulos*/
+.tituloPrincipal {
+    font-family: 'Square Peg', cursive;
+    font-size: xxx-large;
+    color: #E18D92;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.tituloSecundario {
+    font-family: 'Square Peg', cursive;
+    color: #E18D92;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tituloCategorias {
+    font-family: 'Square Peg', cursive;
+    color: #E18D92;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*fin estilos titulos*/
+/*inicio estilo caja categoria*/
+.cajaCategoria {
+    width: 200px;
+    height: 210px;
+    background-color: #fbe2f4;
+    margin: 20px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.gridCategorias {
+    grid-area: categorias;
+}
+
+.filtroCategorias {
+    padding: 0%;
+}
+
+.categorias {
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #3F403B;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.categorias.active {
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+.categorias a {
+    color: #3F403B;
+    text-decoration: none;
+}
+
+.categorias a:hover {
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+/*fin estilo caja categoria*/
+/*inicio estilo footer*/
+.footer {
+    display: flex;
+    background-color: #fcedf7;
+    margin-top: 40px;
+    justify-content: space-around;
+    grid-area: footer;
+}
+
+.footer p {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    margin-top: 11px;
+}
+
+.footerContacto {
+    display: flex;
+    background-color: #fcedf7;
+    margin-top: 40px;
+    justify-content: space-around;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+/*fin estilo footer*/
+/*inicio estilo textos*/
+.texto {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+    padding: 15px;
+}
+
+.textoComoComprar {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.textoMetodos {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textoPuntosEntrega {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    list-style-position: inside;
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding: 0%;
+}
+
+.linksContacto {
+    font-family: 'Quicksand', sans-serif;
+    color: #3F403B;
+    font-weight: 500;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.linksContacto li a {
+    color: #3F403B;
+}
+
+.productos p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #3F403B;
+}
+
+/*fin estilo textos*/
+/*inicio estilo catalogo*/
+
+.cajaProducto {
+    background-color: #fbe2f4;
+    width: 250px;
+    margin: 20px 0px 0px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cajaProducto p {
+    padding: 5px;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+/*fin estilo catalogo*/
+/*inicio grids*/
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: repeat(120px 1fr 1fr 50px);
+    grid-template-areas:
+        "header header"
+        "categorias productos"
+        "..... productos"
+        "footer footer"
+    ;
+}
+/*inicio media queries*/
+@media screen and (max-width: 810px) {
+    .cajaComoComprar {
+        width: 100vp;
+    }
+
+    .textoMetodos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .textoComoComprar {
+        padding: 0%;
+    }
+
+    .listaCajaProductos {
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        grid-template-rows: (1fr 1fr);
+        grid-template-areas:
+            "ruanas gorros"
+            "pañuelos accesorios"
+        ;
+        padding: 0;
+    }
+
+    .ruanasInicio {
+        grid-area: ruanas;
+    }
+
+    .gorrosInicio {
+        grid-area: gorros;
+    }
+
+    .pañuelosInicio {
+        grid-area: pañuelos;
+    }
+
+    .accesoriosInicio {
+        grid-area: accesorios;
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        grid-template-rows: (120px 1fr 1fr 50px);
+        grid-template-areas:
+            "header header"
+            "categorias productos"
+            "..... productos"
+            "footer footer"
+        ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cajaComoComprar {
+        width: 100vp;
+    }
+
+    .textoMetodos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .textoComoComprar {
+        padding: 0%;
+    }
+
+    .listaCajaProductos {
+        display: grid;
+        grid-template-columns: (1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "ruanas"
+            "gorros"
+            "pañuelos"
+            "accesorios"
+        ;
+        padding: 0;
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: (1fr);
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+        grid-template-areas:
+            "header"
+            "categorias"
+            "productos"
+            "footer"
+        ;
+    }
+
+    .productos {
+        display: grid;
+        justify-content: center;
+    }
+
+    .cajaProducto {
+        margin: 20px 0 0 0;
+    }
+
+    .elegirCategoria {
+        display: grid;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,72 @@
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: repeat(120px 1fr 1fr 50px);
+    grid-template-areas:
+        "header header"
+        "categorias productos"
+        "..... productos"
+        "footer footer"
+    ;
+
+    .elegirCategoria {
+        .cajaCategoria {
+            width: 200px;
+            height: 210px;
+            background-color: $colorPrincipal;
+            margin: 20px;
+            padding: 10px 20px 20px 20px;
+            border-radius: 10px;
+    
+            .filtroCategorias {
+                padding: 0%;
+    
+                .categorias.active {
+                    font-weight: 900;
+                    font-weight: bolder;
+                }
+    
+                .categorias {
+                    list-style-type: none;
+                    font-family: $fontSecundaria;
+                    font-weight: 500;
+                    color: $colorTerciario;
+                    margin-top: 5px;
+                    text-decoration: none;
+    
+                    a {
+                        color: $colorTerciario;
+                        text-decoration: none;
+                    }
+    
+                    a:hover {
+                        font-weight: 900;
+                        font-weight: bolder;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    .porductos {
+        grid-area: productos;
+    
+        .cajaProducto {
+            background-color: $colorPrincipal;
+            width: 250px;
+            margin: 20px 0px 0px 20px;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+    
+            p {
+                padding: 5px;
+            }
+        }
+    }
+    
+    .gridCategorias {
+        grid-area: categorias;
+    }
+}

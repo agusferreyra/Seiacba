@@ -1,0 +1,49 @@
+.contenedorInicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header"
+        "novedades"
+        "nuestrosProductos"
+        "footer"
+    ;
+
+    .novedades{
+        grid-area: novedades;
+
+        .carrusel {
+            display: flex;
+            width: 90%;
+            margin-inline: 5%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+    
+            .imgCarrusel {
+                border-radius: 15px;
+            }
+        }
+        
+    }
+
+    .nuestrosProductos {
+        .listaCajaProductos {
+            display: flex;
+            justify-content: center;
+    
+            li {
+                display: inline-block;
+    
+                .cajaProductos {
+                    background-color: #fbe2f4;
+                    width: 250px;
+                    height: 330px;
+                    margin: 30px;
+                    padding: 5px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}

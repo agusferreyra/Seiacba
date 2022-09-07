@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    background-color: $colorPrincipal;
+    margin-top: 40px;
+    justify-content: space-around;
+    grid-area: footer;
+
+    p {
+        font-family: $fontSecundaria;
+        color: $colorTerciario;
+        margin-top: 11px;
+    }
+}
+
+.footerContacto {
+    display: flex;
+    background-color: $colorPrincipal;
+    margin-top: 40px;
+    justify-content: space-around;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
