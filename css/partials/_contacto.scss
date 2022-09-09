@@ -8,4 +8,18 @@
         padding: 20px;
         text-align: center;
     }
+
+    
+}
+
+$redes:(
+    Whatsapp:#00bb2d,
+    Facebook: #3b5998,
+    Instagram: #DD2A7b
+);
+
+@each $redsocial, $colordered in $redes {
+    .contacto#{$redsocial} {
+        color: $colordered;
+    }
 }

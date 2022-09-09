@@ -5,29 +5,21 @@
 }
 
 .tituloPrincipal {
-    font-family: $fontPrincipal;
+   @extend %fuenteTitulos;
     font-size: xxx-large;
-    color: $colorSecundario;
-    text-align: center;
     padding: 20px;
-    font-weight: bold;
 }
 
 .tituloSecundario {
-    font-family: $fontPrincipal;
-    color: $colorSecundario;
+    @extend %fuenteTitulos;
     font-size: 40px;
-    text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .tituloCategorias {
-    font-family: $fontPrincipal;
-    color: $colorSecundario;
+    @extend %fuenteTitulos;
     font-size: xx-large;
-    text-align: center;
-    font-weight: bold;
+
 }
 
 .texto {
@@ -76,14 +68,9 @@
 
 .linksContacto {
     font-family: $fontSecundaria;
-    color: $colorTerciario;
     font-weight: 500;
     text-align: justify;
     list-style-position: inside;
-
-    li>a {
-        color: $colorTerciario;
-    }
 }
 
 .productos {

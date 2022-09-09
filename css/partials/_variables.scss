@@ -5,3 +5,10 @@ $fontSecundaria: 'Quicksand', sans-serif;
 $colorPrincipal: #fcedf7;
 $colorSecundario:  #E18D92;
 $colorTerciario: #3F403B;
+
+%fuenteTitulos{
+    font-family: $fontPrincipal;
+    color: $colorSecundario;
+    text-align: center;
+    font-weight: bold;
+}
