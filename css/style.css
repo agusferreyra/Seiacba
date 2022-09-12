@@ -318,80 +318,122 @@ header .cajaMenu .menu .active a {
   width: 100%;
 }
 
+/*inicio media queries*/
 @media screen and (max-width: 810px) {
   .cajaComoComprar {
-    width: 100vp;
+      width: 100vp;
   }
+
   .textoMetodos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0%;
   }
+
   .textoComoComprar {
-    padding: 0%;
+      padding: 0%;
   }
+
   .listaCajaProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "ruanas gorros" "pañuelos accesorios";
-    padding: 0;
+      display: grid;
+      grid-template-columns: (1fr 1fr);
+      grid-template-rows: (1fr 1fr);
+      grid-template-areas:
+          "ruanas gorros"
+          "pañuelos accesorios"
+      ;
+      padding: 0;
   }
-  .listaCajaProductos .ruanasInicio {
-    grid-area: ruanas;
+
+  .ruanasInicio {
+      grid-area: ruanas;
   }
-  .listaCajaProductos .gorrosInicio {
-    grid-area: gorros;
+
+  .gorrosInicio {
+      grid-area: gorros;
   }
-  .listaCajaProductos .pañuelosInicio {
-    grid-area: pañuelos;
+
+  .pañuelosInicio {
+      grid-area: pañuelos;
   }
-  .listaCajaProductos .accesoriosInicio {
-    grid-area: accesorios;
+
+  .accesoriosInicio {
+      grid-area: accesorios;
   }
+
   .contenedorProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 1fr 1fr 50px;
-    grid-template-areas: "header header" "categorias productos" "..... productos" "footer footer";
+      display: grid;
+      grid-template-columns: (1fr 1fr);
+      grid-template-rows: (120px 1fr 1fr 50px);
+      grid-template-areas:
+          "header header"
+          "categorias productos"
+          "..... productos"
+          "footer footer"
+      ;
+  }
+
+  .footerNosotras{
+    position: absolute;
+  bottom: 0%;
+  width: 100%;
   }
 }
+
 @media screen and (max-width: 480px) {
   .cajaComoComprar {
-    width: 100vp;
+      width: 100vp;
   }
+
   .textoMetodos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0%;
   }
+
   .textoComoComprar {
-    padding: 0%;
+      padding: 0%;
   }
+
   .listaCajaProductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "ruanas" "gorros" "pañuelos" "accesorios";
-    padding: 0;
+      display: grid;
+      grid-template-columns: (1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+          "ruanas"
+          "gorros"
+          "pañuelos"
+          "accesorios"
+      ;
+      padding: 0;
   }
+
   .contenedorProductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr 1fr 1fr 1fr);
-    grid-template-areas: "header" "categorias" "productos" "footer";
+      display: grid;
+      grid-template-columns: (1fr);
+      grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+      grid-template-areas:
+          "header"
+          "categorias"
+          "productos"
+          "footer"
+      ;
   }
-  .contenedorProductos .productos {
-    display: grid;
-    justify-content: center;
+
+  .productos {
+      display: grid;
+      justify-content: center;
   }
-  .contenedorProductos .productos .cajaProducto {
-    margin: 20px 0 0 0;
+
+  .cajaProducto {
+      margin: 20px 0 0 0;
   }
-  .contenedorProductos .elegirCategoria {
-    display: grid;
-    justify-content: center;
+
+  .elegirCategoria {
+      display: grid;
+      justify-content: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

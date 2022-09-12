@@ -9,6 +9,19 @@
 background-color:#E18D92;
 color:#fbe2f4;
 }
+
+.carrusel {
+    display: flex;
+    width: 90%;
+    margin-inline: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.imgCarrusel {
+    border-radius: 15px;
+}
+
 header {
     background-color: #fcedf7;
     grid-area: header;
@@ -226,6 +239,58 @@ header {
 }
 
 /*fin estilo textos*/
+/*inicio estilo contenido nosotras*/
+.contenidoNosotras {
+    display: flex;
+    justify-content: center;
+}
+
+.cajaNosotras {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cajaNosotras img {
+    margin: 10px;
+}
+
+/*fin estilo contenido nosotras*/
+/*inicio estilo nuestros productos en inicio*/
+.cajaProductos {
+    background-color: #fbe2f4;
+    width: 250px;
+    height: 330px;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.listaCajaProductos {
+    display: flex;
+    justify-content: center;
+}
+
+.listaCajaProductos li {
+    display: inline-block;
+}
+
+/*fin estilo nuestros productos en inicio*/
+/*inicio estilo contenido contacto*/
+.contenidoContacto {
+    display: flex;
+    justify-content: center;
+}
+
+.cajaContacto {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*fin estilo contenido contacto*/
 /*inicio estilo catalogo*/
 
 .cajaProducto {
@@ -246,6 +311,49 @@ header {
 }
 
 /*fin estilo catalogo*/
+/*inicio estilo contenido como comprar*/
+.contenidoComprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cajaComoComprar {
+
+    margin: 30px;
+    padding: 10px;
+    text-align: start;
+}
+
+.cajaMetodos {
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cajaMetodo {
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+}
+
+.textoComoComprar {
+    padding: 0%;
+}
+
+.textoMetodos {
+    padding: 0%;
+}
+
+.cajaPuntosEntrega {
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*fin estilo contenido como comprar*/
 /*inicio grids*/
 .contenedorProductos {
     display: grid;
@@ -258,6 +366,28 @@ header {
         "footer footer"
     ;
 }
+
+.contenedorInicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header"
+        "novedades"
+        "nuestrosProductos"
+        "footer"
+    ;
+}
+
+.novedades {
+    grid-area: novedades;
+}
+
+.nuestrosProductos {
+    grid-area: nuestrosProductos;
+}
+
 /*inicio media queries*/
 @media screen and (max-width: 810px) {
     .cajaComoComprar {
