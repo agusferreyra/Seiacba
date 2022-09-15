@@ -98,6 +98,14 @@ header {
     font-weight: bold;
 }
 
+.tituloProductos{
+    font-family: 'Square Peg', cursive;
+    font-size: xxx-large;
+    color: #3F403B;
+    text-align: center;
+    font-weight: bold;
+}
+
 .tituloCategorias {
     font-family: 'Square Peg', cursive;
     color: #E18D92;
@@ -259,7 +267,7 @@ header {
 /*fin estilo contenido nosotras*/
 /*inicio estilo nuestros productos en inicio*/
 .cajaProductos {
-    background-color: #fbe2f4;
+    background-color: rgb(251, 226, 244);
     width: 250px;
     height: 330px;
     margin: 30px;
@@ -276,6 +284,41 @@ header {
     display: inline-block;
 }
 
+.cajaProductos figure{
+    position:relative;
+     cursor: pointer;
+     overflow: hidden;
+     border-radius: 3px;
+ }
+ .cajaProductos figure img{
+     transition: all 400ms ease-out;
+     will-change: transform;
+ }
+ .cajaProductos figure .capa{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(251, 226, 244, 0.822);
+     transition: all 400ms ease-out;
+     opacity: 0;
+     visibility: hidden;
+    text-align: center;
+ }
+ .cajaProductos figure:hover > .capa {
+     opacity: 1;
+     visibility: visible;
+ }
+ .cajaProductos figure:hover > .capa h3{
+     margin-top: 120px;
+     margin-bottom: 15px;
+ }
+ .cajaProductos figure:hover > img{
+     transform: scale(1.2);
+ }
+ .cajaProductos figure .capa h3{
+     transition: all 400ms ease-out;
+ }
 /*fin estilo nuestros productos en inicio*/
 /*inicio estilo contenido contacto*/
 .contenidoContacto {
