@@ -12,8 +12,8 @@ color:#fbe2f4;
 
 .carrusel {
     display: flex;
-    width: 90%;
-    margin-inline: 5%;
+    width: 80%;
+    margin-inline: 10%;
     margin-top: 5%;
     margin-bottom: 3%;
 }
