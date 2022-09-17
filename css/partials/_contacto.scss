@@ -7,6 +7,12 @@
         margin: 20px;
         padding: 20px;
         text-align: center;
+
+        .linksContacto{
+            padding-top: 30px;
+            padding-bottom: 50px;
+            padding-inline: 0px;
+        }
     }
 
     
@@ -23,3 +29,11 @@ $redes:(
         color: $colordered;
     }
 }
+
+@each $redsocial, $colordered in $redes {
+    .contacto#{$redsocial}:hover {
+        color: $colordered;
+        font-weight: bold;
+    }
+}
+

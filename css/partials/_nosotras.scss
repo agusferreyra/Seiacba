@@ -1,4 +1,8 @@
-.contenidoNosotras {
+@mixin tamaños($ancho, $margen) {
+    width: $ancho;
+    margin: $margen;
+    
+}.contenidoNosotras {
     display: flex;
     justify-content: center;
 
@@ -13,7 +17,3 @@
     }
 }
 
-@mixin tamaños($ancho, $margen) {
-    width: $ancho;
-    margin: $margen;
-}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&display=swap");
 .tituloCategorias, .tituloSecundario, .tituloPrincipal {
   font-family: "Square Peg", cursive;
@@ -21,6 +20,11 @@
 *::selection {
   background-color: #E18D92;
   color: #fbe2f4;
+}
+
+.dropdown-item:hover {
+  background-color: #fff;
+  width: auto;
 }
 
 .textoAyuda {
@@ -240,7 +244,7 @@ header .cajaMenu .menu .active a {
   text-align: center;
 }
 .contenidoNosotras .cajaNosotras img {
-  width: 100px;
+  width: 200px;
   margin: 3px;
 }
 
@@ -254,6 +258,11 @@ header .cajaMenu .menu .active a {
   padding: 20px;
   text-align: center;
 }
+.contenidoContacto .cajaContacto .linksContacto {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-inline: 0px;
+}
 
 .contactoWhatsapp {
   color: #00bb2d;
@@ -265,6 +274,21 @@ header .cajaMenu .menu .active a {
 
 .contactoInstagram {
   color: #DD2A7b;
+}
+
+.contactoWhatsapp:hover {
+  color: #00bb2d;
+  font-weight: bold;
+}
+
+.contactoFacebook:hover {
+  color: #3b5998;
+  font-weight: bold;
+}
+
+.contactoInstagram:hover {
+  color: #DD2A7b;
+  font-weight: bold;
 }
 
 .contenidoComprar {
@@ -305,135 +329,4 @@ header .cajaMenu .menu .active a {
   font-family: "Quicksand", sans-serif;
   color: #3F403B;
   margin-top: 11px;
-}
-
-.footerContacto {
-  display: flex;
-  background-color: #fcedf7;
-  margin-top: 40px;
-  justify-content: space-around;
-  grid-area: footer;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-}
-
-/*inicio media queries*/
-@media screen and (max-width: 810px) {
-  .cajaComoComprar {
-      width: 100vp;
-  }
-
-  .textoMetodos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0%;
-  }
-
-  .textoComoComprar {
-      padding: 0%;
-  }
-
-  .listaCajaProductos {
-      display: grid;
-      grid-template-columns: (1fr 1fr);
-      grid-template-rows: (1fr 1fr);
-      grid-template-areas:
-          "ruanas gorros"
-          "pañuelos accesorios"
-      ;
-      padding: 0;
-  }
-
-  .ruanasInicio {
-      grid-area: ruanas;
-  }
-
-  .gorrosInicio {
-      grid-area: gorros;
-  }
-
-  .pañuelosInicio {
-      grid-area: pañuelos;
-  }
-
-  .accesoriosInicio {
-      grid-area: accesorios;
-  }
-
-  .contenedorProductos {
-      display: grid;
-      grid-template-columns: (1fr 1fr);
-      grid-template-rows: (120px 1fr 1fr 50px);
-      grid-template-areas:
-          "header header"
-          "categorias productos"
-          "..... productos"
-          "footer footer"
-      ;
-  }
-
-  .footerNosotras{
-    position: absolute;
-  bottom: 0%;
-  width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cajaComoComprar {
-      width: 100vp;
-  }
-
-  .textoMetodos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0%;
-  }
-
-  .textoComoComprar {
-      padding: 0%;
-  }
-
-  .listaCajaProductos {
-      display: grid;
-      grid-template-columns: (1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:
-          "ruanas"
-          "gorros"
-          "pañuelos"
-          "accesorios"
-      ;
-      padding: 0;
-  }
-
-  .contenedorProductos {
-      display: grid;
-      grid-template-columns: (1fr);
-      grid-template-rows: repeat(1fr 1fr 1fr 1fr);
-      grid-template-areas:
-          "header"
-          "categorias"
-          "productos"
-          "footer"
-      ;
-  }
-
-  .productos {
-      display: grid;
-      justify-content: center;
-  }
-
-  .cajaProducto {
-      margin: 20px 0 0 0;
-  }
-
-  .elegirCategoria {
-      display: grid;
-      justify-content: center;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
