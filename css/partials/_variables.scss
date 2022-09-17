@@ -12,3 +12,16 @@ $colorTerciario: #3F403B;
     text-align: center;
     font-weight: bold;
 }
+
+.iconoWpp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    scale: 0.9;
+}
+
+.iconoWpp:hover{
+    transform: scale(1.1);
+    transition: all 50ms ease-out;
+}

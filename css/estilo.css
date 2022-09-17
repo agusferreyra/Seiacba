@@ -31,6 +31,19 @@ header {
 
 }
 
+.iconoWpp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    scale: 0.9;
+}
+
+.iconoWpp:hover{
+    transform: scale(1.1);
+    transition: all 50ms ease-out;
+}
+
 .logo {
     width: 120px;
     margin: 0 25px 0 25px;
@@ -545,4 +558,13 @@ header {
         display: grid;
         justify-content: center;
     }
+
+    .iconoWpp{
+        position: fixed;
+        right: 5px;
+        bottom: 7px;
+        width: 50px;
+        z-index: 2;
+    }
 }
+
